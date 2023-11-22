@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+
+function mobile(mobilename,mobileprice,mobileram ,mobilestorage)
+{
+this.mobilename=mobilename;
+this.mobileprice=mobileprice;
+this.mobileram=mobileram;
+this.mobilestorage=mobilestorage;
+}
+
+
+var m1=new mobile("lg",30000,"126gb","1gb")
+var m2=new mobile("lg",40000,"126gb","1gb")
+var m3=new mobile("lg",60000,"126gb","1gb")
+var m4=new mobile("lg",70000,"126gb","1gb")
+ var userarray=[m1,m2,m3,m4]
+ 
+for (var m of userarray)
+{
+    if(m.mobileprice>10000)
+    {
+        for( var bs in m)
+
+
+        document.write(`${bs}:${m[bs]}<br>`)
+    }
+    document.write(`<br>`)
+    document.write(`-----------------------`)
+    document.write(`<br>`)
+}
+
+
+    </script>
+
+
+
+</body>
+
+</html>

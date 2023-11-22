@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ascending order</title>
+</head>
+<body>
+    <script>
+
+var a = prompt("first num")
+var b = prompt("second num")
+var c = prompt("third num")
+if(a<b && a<c)
+{
+    document.write(`${a}`)
+
+    if(b<c){
+    document.write(`${b} ${c}`)
+}
+
+     else{
+    document.write(`${c} ${b}`)
+     }
+}
+
+
+ else if (b<c && b<a)
+ {
+    document.write(`{b}`)
+    if(c<a) 
+    {document.write (`${c} ${a}`)
+ }
+ else
+ {document.write (`${a} ${c}`)}
+}
+
+
+else if(c<a  && c<b)
+{
+     document.write(`${c}`)
+    
+if(a<b)
+{
+    document.write(`${a} ${b}`)
+}
+if(b<a)
+{
+    document.write(`${b} ${a}`)
+}
+}
+ 
+
+    </script>
+</body>
+</html>

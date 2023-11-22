@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var y = prompt("year")
+        var m =prompt("month")
+        switch (m) {
+
+            case "jan": document.write("31")
+                break;
+
+            case "feb":
+
+                if (y % 100 != 0 && y % 4 == 0 || y % 400 == 0) {
+                    document.write(29)
+                }
+                else {
+                    document.write(28)
+                }
+                break;
+
+            case "mar": document.write("31")
+                break;
+
+            case "apr": document.write("30")
+                break;
+            case "may": document.write("31")
+                break;
+
+
+            case"june": document.write("30")
+                break;
+
+            case "july": document.write("31")
+                break;
+
+            case "aug": document.write("31")
+                break;
+
+            case "sep": document.write("30")
+                break;
+
+
+            case "oct": document.write("31")
+                break;
+
+            case "nov": document.write("30")
+                break;
+
+            case "dec": document.write("31 ")
+                break;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+class student{
+
+
+    constructor(username,userid,useredu)
+{
+this.username=username
+this.userid=userid
+this.useredu=useredu
+}
+
+getdetails( ){
+    return this.username+"is studying in "+this.useredu
+}
+}
+
+let s1=new student ("bhasakr","s01","bsa")
+let s2=new student ("bhakr","s02","bca")
+document.write(s1.getdetails());
+    </script>
+</body>
+</html>
